@@ -1,0 +1,71 @@
+body
+{
+	background-color: #2196F3;
+	font-family: roboto;
+
+}
+
+.container{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+		/* REMEMBER THIS SNIPPET */
+	transform: translate(-50%, -50%);
+	width: 100%;
+
+}
+.panel_1
+{
+	height:75%; 
+	width: 100%;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+}
+
+.button {
+	width: 50px;
+	height: 50px;
+	background: #F44336;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	transition: .75s;  
+	cursor: pointer;	
+}
+
+div:hover.button{
+	background-color: #E57373;
+}
+
+div:active:after.button{
+	transition: .5s;
+	opacity: 1;
+}
+
+div:active.button{
+	background-color: #D32F2F;
+}
+
+p{
+	text-align: center;
+}
+span.message{
+	font-family: cursive;
+	font-size: 144px;
+	font-style: bold;
+}
+
+span.description{
+	font-family: roboto;
+	font-size: 24px;
+	font-style: bold;
+	padding: 5px;
+}
+
+footer{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+}
