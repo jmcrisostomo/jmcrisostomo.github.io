@@ -1,24 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Welcome!</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<meta charset="utf-8">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="theme-color" content="#4285f4">
+		<meta name="description" content="My Porfolio in Github! <3">
+		<title>JM Crisostomo</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="panel_1">
+				<p>
+					<span class="message">Hi There!</span><br>
+					<span class="description">Kinda busy right now, sorry... But, I'll be back! ;) - JM</span>
+				</p>
+				
+				<p id="oras_ngayon" class="clock"></p>
 
-<body>
-
-	<div class="container">
-		<div class="panel_1">
-		<p>
-			<span class="message">Hi There!</span><br>
-			<span class="description">It seems that I don't have any pages yet so comeback later okay? ciao! :) - JM</span>
-		</p>
+			</div>
 		</div>
-	</div>
+		<footer>
+			<ul class="follow-me">
+				<li>
+					<a href="https://github.com/jmcrisostomo">
+						<span><i class="fa fa-2x fa-github"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/cris.johnmatthew">
+						<span><i class="fa fa-2x fa-facebook"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/crisjohnmatthew">
+						<span><i class="fa fa-2x fa-twitter"></i></span>
+					</a>
+				</li>
+			</ul><!-- /.follow-me -->
+			
+			<p style="color: white;">&copy; 2018 - JM Crisostomo</p>
+		</footer>
 
-	<footer>
-		<p style="color: white;">&copy; 2018 - JM Crisostomo</p>
-	</footer>
-</body>
+		<!-- scripts -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/moment/min/moment.min.js"></script>
+
+		<script type="text/javascript">
+			var interval = setInterval(orasan, 1000);
+			function orasan() {
+				var ngayon = moment().format("dddd, MMMM Do YYYY, hh:mm:ss A");
+				document.getElementById("oras_ngayon").innerHTML = ngayon;
+			}
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function($) {
+				var get_month = moment().month();
+				var get_day = moment().date();
+
+				var event = get_month + '-' + get_day;
+				
+				if(event == '1-1'){
+					$('.description').text('Manigong Bagong Taon!');
+				}
+				else if(event == '5-12'){
+					$('.description').text('Happy Independence Day!');
+					$('.description').append('<span><img src="https://media.giphy.com/media/dChn3so34WFdC/giphy.gif" alt="Philippine_Flag" style="height: 32px;width: auto;position: absolute;"></span>');
+
+				}
+				else if(event == '7-18'){
+					$('.description').text('Happy Birthday to Me! :)');
+				}
+				else if(event == '12-25'){
+					$('.description').text('Merry Christmas! <3');
+				}
+				// $('.description').text('Today: ' + get_month + '-' + get_day);	
+			});
+		</script>
+	</body>
 </html>

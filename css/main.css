@@ -6,10 +6,12 @@ Author URI: 	https://jmcrisostomo.github.io/
 Tags: 			No Tags 
 ***********************************************/
 
+@import url('https://fonts.googleapis.com/css?family=Lato|Mina');
+
 body
 {
 	background-color: #2196F3;
-	font-family: roboto;
+	font-family: 'Mina', 'Lato', Roboto, sans-serif;;
 
 }
 
@@ -58,15 +60,22 @@ p{
 	text-align: center;
 }
 span.message{
-	font-family: cursive;
+	font-family: 'Lato';
 	font-size: 144px;
 	font-style: bold;
 }
 
 span.description{
-	font-family: roboto;
+	font-family: inherit;
 	font-size: 24px;
 	font-style: bold;
+	padding: 5px;
+}
+p.clock{
+	font-family: inherit;
+	font-size: 14px;
+	/*font-weight: bold;*/
+	letter-spacing: 3px;
 	padding: 5px;
 }
 
@@ -76,4 +85,49 @@ footer{
 	bottom: 0;
 	left: 0;
 	padding: 20px;
+	text-align: center;
+}
+
+.follow-me {
+	padding: 15px;
+}
+.follow-me > li {
+	display: inline-block;
+	padding: 10px 15px;
+}
+.follow-me > li > a {
+	color: #FFF;
+}
+
+.follow-me > li > a:hover {
+	-webkit-transition: all 125ms ease-in;
+	   -moz-transition: all 125ms ease-in;
+	    -ms-transition: all 125ms ease-in;
+	     -o-transition: all 125ms ease-in;
+	        transition: all 125ms ease-in;
+	color: rgba(0, 0, 0, 0.8);;
+}
+
+
+/*mobile support <3*/
+@media only screen and (max-device-width:480px)
+{
+	span.message{
+		font-size: 200px;
+	}
+
+	span.description{
+		font-size: 48px;
+	}
+	p.clock{
+		font-size: 36px;
+	}
+
+	.follow-me > li > a {
+		font-size: 28px;
+	}
+
+	footer > p {
+		font-size: 24px;
+	}
 }
