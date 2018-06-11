@@ -113,14 +113,14 @@ footer{
 @media only screen and (max-device-width:480px)
 {
 	span.message{
-		font-size: 200px;
+		font-size: 54px;
 	}
 
 	span.description{
-		font-size: 48px;
+		font-size: 24px;
 	}
 	p.clock{
-		font-size: 36px;
+		font-size: 16px;
 	}
 
 	.follow-me > li > a {
