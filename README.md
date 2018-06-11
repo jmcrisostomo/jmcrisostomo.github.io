@@ -1,3 +1,3 @@
-# crisjohnmatthew13.github.io
+# jmcrisostomo.github.io
 
-Hello! This is repository for creating my portfolio. 
+Hello! This is repository for creating my portfolio. Feel free to contribute ;)
