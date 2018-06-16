@@ -1,85 +1,72 @@
 <!doctype>
 <html>
-<head>
-	<title>Error 404: Not Found :(</title>
-</head>
-
-<style type="text/css">
-	
-	div.outerbox{
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		/* REMEMBER THIS SNIPPET */
-		transform: translate(-50%, -50%);
-		width: 100%;
+	<head>
+		<title>Error 404: Not Found :(</title>
+	</head>
+	<style type="text/css">
+		
+		div.outerbox{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			/* REMEMBER THIS SNIPPET */
+			transform: translate(-50%, -50%);
+			width: 100%;
+		}
+		div.innerbox{
+			background: #fff;
+			text-align: center;
+		}
+		span.errmessagebig{
+			font-size: 144px;
+			font-style: bold;
+			font-family: cursive;
+			margin: auto 0;
+		}
+		span.errmessagesmall{
+			font-size: 36px;
+			font-family: roboto;
+		}
+		span.joke{
+			font-size: 16px;
+			font-family: roboto;
+			font-style: italic;
+		}
+		img.bg_bruh{
+			position: fixed;
+			margin: 0 auto;
+			width: 100%;
+			z-index: -1;
+			opacity: .5;
+		}
+		.bg_bruh{
+			animation-name: bg_moving;
+		animation-duration: 120s;
+		animation-iteration-count: infinite;
+		}
+		@-webkit-keyframes bg_moving{
+		0% {top: -250px;}
+		50% {top: 100px;}
+		100% {top: -250px;}
 	}
-
-
-	div.innerbox{
-		background: #fff;
-		text-align: center;
+	@keyframes bg_moving{
+		0% {top: -250px;}
+		50% {top: 100px;}
+		100% {top: -250px;}
 	}
-
-	span.errmessagebig{
-		font-size: 144px;
-		font-style: bold;
-		font-family: cursive;
-		margin: auto 0;
-	}
-
-	span.errmessagesmall{
-		font-size: 36px;
-		font-family: roboto;
-	}
-
-	span.joke{
-		font-size: 16px;
-		font-family: roboto;
-		font-style: italic;
-	}
-
-	img.bg_bruh{
-		position: fixed;
-		margin: 0 auto;
-		width: 100%;
-		z-index: -1;
-		opacity: .5;
-	}
-
-	.bg_bruh{
-		animation-name: bg_moving;
-    	animation-duration: 120s;
-    	animation-iteration-count: infinite;
-	}
-
-	@-webkit-keyframes bg_moving{
-    	0% {top: -250px;}
-    	50% {top: 100px;}
-    	100% {top: -250px;}
-    }
-
-    @keyframes bg_moving{
-    	0% {top: -250px;}
-    	50% {top: 100px;}
-    	100% {top: -250px;}
-    }
-</style>
-
-<body>
-	<div class="asdasd">
-		<img class="bg_bruh" src="images/bruh.png" alt="image missing..." />
-	</div>
-
-	<div class="outerbox">
-
-		<div class="innerbox">
-			<p>
-			<span class="errmessagebig">404 :(</span><br>
-			<span class="errmessagesmall">Oh no... Something's wrong...</span><br>
-			<span class="joke">Please contact the admin of this page... or send nudes.</span>
-			</p>
+	</style>
+	<body>
+		<div class="asdasd">
+			<img class="bg_bruh" src="images/bruh.png" alt="image missing..." />
 		</div>
-	</div>
-</body>
+		<div class="outerbox">
+			<div class="innerbox">
+				<p>
+					<span class="errmessagebig">404 :(</span><br>
+					<span class="errmessagesmall">Oh no... Something's wrong...</span><br>
+					<span class="joke">Please contact the admin of this page... or send nudes.</span>
+				</p>
+			</div>
+		</div>
+	</body>
 </html>
