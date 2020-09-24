@@ -1,14 +1,10 @@
-/**
- *
- *
-    Theme Name:   JustAnotherThemeFromScratch
-    Description:  For Portfolio and Stuff
-    Author:       JM Crisostomo
-    Author URI:   https://jmcrisostomo.github.io/
-    Tags:         No Tags
- *
- */
-
+/**********************************************
+Theme Name: 	MyTheme v0.2
+Description: 	For Portfolio
+Author: 		JM Crisostomo
+Author URI: 	https://jmcrisostomo.github.io/
+Tags: 			No Tags 
+***********************************************/
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Mina');
 
@@ -30,7 +26,7 @@ body
 }
 .panel_1
 {
-	height:75%;
+	height:75%; 
 	width: 100%;
 	background-color: #FFFFFF;
 	margin: 0 auto;
@@ -43,8 +39,8 @@ body
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
-	transition: .75s;
-	cursor: pointer;
+	transition: .75s;  
+	cursor: pointer;	
 }
 
 div:hover.button{
