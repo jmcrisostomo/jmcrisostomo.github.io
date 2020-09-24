@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="theme-color" content="#4285f4">
+		<meta name="description" content="My Porfolio in Github! <3">
+		<!-- <meta property="op:markup_version" content="v1.0"> -->
+		<!-- <meta property="fb:app_id"          content="2088990254682504">  -->
+		<meta property="og:type"            content="website">
+		<meta property="og:url"             content="https://jmcrisostomo.github.io/">
+		<meta property="og:title"           content="JM Crisostomo">
+		<meta property="og:image"           content="https://i.imgur.com/uCPT9qg.png">
+		<meta property="og:description"     content="My Porfolio in Github! <3">
+		<!-- The URL of the web version of your article -->
+		<link rel="canonical" href="https://jmcrisostomo.github.io/">
+
+
+		<title>JM Crisostomo</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+<!-- 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> -->
+	</head>
+	<body>
+		<div class="container">
+			<div class="panel_1">
+				<p>
+					<span class="message">Hi There!</span><br>
+					<span class="description">Kinda busy right now, sorry... But, I'll be back! ;) - JM</span>
+				</p>
+
+				<p id="oras_ngayon" class="clock"></p>
+
+			</div>
+		</div>
+		<footer>
+			<ul class="follow-me">
+				<li>
+					<a href="https://github.com/jmcrisostomo">
+						<span><i class="fab fa-2x fa-github"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/cris.johnmatthew">
+						<span><i class="fab fa-2x fa-facebook-square"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/crisjohnmatthew">
+						<span><i class="fab fa-2x fa-twitter"></i></span>
+					</a>
+				</li>
+			</ul><!-- /.follow-me -->
+
+			<p style="color: white;">&copy; 2020 - JM Crisostomo</p>
+		</footer>
+
+		<!-- scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+		<script src="https://kit.fontawesome.com/de4babe753.js" crossorigin="anonymous"></script>
+
+		<script type="text/javascript">
+			var interval = setInterval(orasan, 1000);
+			function orasan() {
+				var ngayon = moment().format("dddd, MMMM Do YYYY, hh:mm:ss A");
+				document.getElementById("oras_ngayon").innerHTML = ngayon;
+			}
+		</script>
+
+		<script type="text/javascript" src="function.js">
+
+		</script>
+
+		<script type="text/javascript">
+			FB.ui({
+			  method: 'share',
+			  href: 'https://developers.facebook.com/docs/',
+			}, function(response){});
+		</script>
+	</body>
+</html>
