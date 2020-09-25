@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>JM Crisostomo</title>
+    <!-- Icon Sets -->
     <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
@@ -22,14 +23,24 @@
     <meta name="msapplication-TileColor" content="#4285f4">
     <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
     <meta name="theme-color" content="#4285f4">
-    <meta name="description" content="My Porfolio in Github! <3">
+    <meta name="description" content="I like coffee and code ☕🐱‍👤">
+
+    <!-- Facebook Meta -->
     <!-- <meta property="op:markup_version" content="v1.0"> -->
     <!-- <meta property="fb:app_id"          content="2088990254682504">  -->
-    <meta property="og:type"            content="website">
-    <meta property="og:url"             content="https://jmcrisostomo.github.io/">
-    <meta property="og:title"           content="JM Crisostomo">
-    <meta property="og:image"           content="https://i.imgur.com/bfv4nqD.png">
-    <meta property="og:description"     content="I like coffee and code ☕🐱‍👤">
+    <meta property="og:type"  content="website">
+    <meta property="og:title" content="JM Crisostomo">
+    <meta property="og:description" content="I like coffee and code ☕🐱‍👤">
+    <meta property="og:image" content="https://i.imgur.com/bfv4nqD.png">
+    <meta property="og:url" content="https://jmcrisostomo.github.io/">
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:title" content="JM Crisostomo">
+    <meta name="twitter:description" content="I like coffee and code ☕🐱‍👤">
+    <meta name="twitter:image" content="https://i.imgur.com/bfv4nqD.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Need faster internet lol">
+
     <!-- The URL of the web version of your article -->
     <link rel="canonical" href="https://jmcrisostomo.github.io/">
 
@@ -46,6 +57,9 @@
       html, body {
         /*background-color: #270A0B;*/
         background-color: #1b0707;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
       }
 
       #main h1 {
@@ -74,9 +88,78 @@
       }
 
       /* If fade out option is set */
-      .typed-fade-out {
+      #main .typed-fade-out {
       }
 
+      #main .box-content {
+        position: relative;
+      }
+
+      #main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+
+      @media only screen and (max-device-width: 480px){
+        #main {
+          position: unset;
+          top: unset;
+          left: unset;
+          transform: unset;
+          width: unset;
+        }
+
+        #main .display-1 {
+          font-size: 4rem;
+        }
+
+        #main .typed-cursor {
+          display: none;
+        }
+
+        #main .face {
+          width: 250px;
+          margin-top: 2em;
+        }
+      }
+
+      #main .box-content {
+        position: relative;
+      }
+
+      #main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+
+      @media only screen and (max-device-width:480px){
+        #main {
+          position: unset;
+          top: unset;
+          left: unset;
+          transform: unset;
+          width: unset;
+        }
+
+        #main .display-1 {
+          font-size: 4rem;
+        }
+
+        #main .typed-cursor {
+          display: none;
+        }
+
+        #main .face {
+          width: 250px;
+          margin-top: 2em;
+        }
+      }
     </style>
   </head>
   <body>
@@ -114,39 +197,43 @@
     </nav>
 
     <div id="main" class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <img class="img-fluid m-3" src="/images/my_face.jpg">
-        </div>
-        <div class="col-md-8">
-          <div class="d-flex">
-            <h1 class="type-hello display-1"></h1>
+      <div class="box-content">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="text-center">
+              <img class="face img-fluid m-md-3" src="/images/my_face.jpg">
+            </div>
           </div>
-          <div class="d-flex">
-            <h3 class="type-status"></h3>
-          </div>
+          <div class="col-md-8">
+            <div class="d-md-flex d-block text-md-left text-center">
+              <h1 class="type-hello display-1"></h1>
+            </div>
+            <div class="d-md-flex d-block text-md-left text-center">
+              <h3 class="type-status"></h3>
+            </div>
 
-          <h5 class="mt-5 mb-3">Follow me on:</h5>
-          <div class="d-flex" style="width: 100%;">
-            <div class="flex-fill">
-              <a target="_blank" class="text-light" href="https://github.com/jmcrisostomo">
-                <i class="fab fa-4x fa-github"></i>
-              </a>
-            </div>
-            <div class="flex-fill">
-               <a target="_blank" class="text-light" href="https://www.facebook.com/cris.johnmatthew">
-                <i class="fab fa-4x fa-facebook-square"></i>
-              </a>
-            </div>
-            <div class="flex-fill">
-              <a target="_blank" class="text-light" href="https://twitter.com/crisjohnmatthew">
-                <i class="fab fa-4x fa-twitter"></i>
-              </a>
-            </div>
-            <div class="flex-fill">
-              <a class="text-light" href="mailto:jm.crisostomo.e@gmail.com">
-                <i class="fas fa-4x fa-envelope"></i>
-              </a>
+            <h5 class="mt-5 mb-3">Follow me on:</h5>
+            <div class="d-flex" style="width: 100%;">
+              <div class="flex-fill">
+                <a target="_blank" class="text-light" href="https://github.com/jmcrisostomo">
+                  <i class="fab fa-4x fa-github"></i>
+                </a>
+              </div>
+              <div class="flex-fill">
+                 <a target="_blank" class="text-light" href="https://www.facebook.com/cris.johnmatthew">
+                  <i class="fab fa-4x fa-facebook-square"></i>
+                </a>
+              </div>
+              <div class="flex-fill">
+                <a target="_blank" class="text-light" href="https://twitter.com/crisjohnmatthew">
+                  <i class="fab fa-4x fa-twitter"></i>
+                </a>
+              </div>
+              <div class="flex-fill">
+                <a class="text-light" href="mailto:jm.crisostomo.e@gmail.com">
+                  <i class="fas fa-4x fa-envelope"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
